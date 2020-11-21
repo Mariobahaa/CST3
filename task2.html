@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+        <title> JS Task 2</title>
+    </head>
+    <body>
+        <script>
+            var num;
+            var sum=0;
+            while(num!=0 && sum <= 100 && sum >=0)
+            {
+                num = parseInt(prompt("Enter any number or zero to stop","0"));
+                if(isNaN(num))
+                {
+                    alert("Please Enter a number");
+                    num=0;
+                }
+                else sum+=num;
+            }
+            document.writeln("The Sum of numbers you entered is: "+sum);
+        </script>
+    </body>
+</html>
